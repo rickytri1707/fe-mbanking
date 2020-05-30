@@ -1,0 +1,4 @@
+#Sat May 30 21:22:04 ICT 2020
+base.0=D\:\\mbank\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Welcome, Guest"
+            android:textAlignment="center"
+            android:id="@+id/txtNama"
+            android:textSize="25sp"
+            android:maxLength="30"
+            android:layout_width="300dp"
+            android:layout_height="65dp" />
+
+        <Button
+            android:drawableLeft="@drawable/baseline_input_black_18dp"
+            android:id="@+id/btnLogout"
+            android:layout_marginLeft="40dp"
+            android:layout_width="55dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnInfoSaldo"
+            android:text="M-Info"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/btnTransfer"
+            android:text="M-Transfer"
+            android:layout_marginLeft="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <Button
+            android:id="@+id/btnMutasi"
+            android:text="M-Mutasi Rekening"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAdmin"
+            android:text="M-Admin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</LinearLayout>

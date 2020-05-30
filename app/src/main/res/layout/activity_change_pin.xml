@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorCyan"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="GANTI PIN"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- PIN Lama -->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:text="PIN Lama"
+        android:textSize="22dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtPinLama"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:hint="Input PIN Lama"
+        android:layout_width="183dp"
+        android:textAlignment="center"
+        android:layout_height="50dp" />
+    <!-- end PIN Lama -->
+
+    <!-- PIN Baru -->
+    <TextView
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="PIN Baru"
+        android:textSize="22dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editPinBaru"
+        android:inputType="textPassword"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:hint="Input PIN Baru"
+        android:textAlignment="center"
+        android:layout_width="183dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/edtKonfPinBaru"
+        android:layout_width="183dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:hint="Konfirmasi PIN Baru"
+        android:textAlignment="center"
+        android:inputType="textPassword" />
+    <!-- end PIN Baru -->
+
+    <Button
+        android:id="@+id/btnSendPin"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:text="Ganti PIN"
+        android:textAlignment="center"
+        android:layout_width="120dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>
