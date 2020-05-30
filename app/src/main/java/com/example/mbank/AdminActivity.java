@@ -55,10 +55,6 @@ public class AdminActivity extends AppCompatActivity {
         edtPinBaru = findViewById(R.id.editPinBaru);
         edtKonfPinBaru = findViewById(R.id.edtKonfPinBaru);
 
-        Random rnd = new Random();
-        int nStan = rnd.nextInt(999999) + 000001;
-        final String sStan = String.format("%06d", nStan);
-
         btnSendPin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,9 +79,9 @@ public class AdminActivity extends AppCompatActivity {
                     JSONObject jdata = new JSONObject();
                     jdata.put("mti", "0200");
                     jdata.put("pcode", "900000");
-                    jdata.put("stan", sStan);
+                    jdata.put("stan", cfg.GenerateStan());
                     jdata.put("gmt", cfg.GetDateTimeGMT());
-                    jdata.put("rrn", sStan + sStan);
+                    jdata.put("rrn", cfg.GenerateStan() + cfg.GenerateStan());
                     jdata.put("termId", String.format("%-10s", "Android"));
                     jdata.put("userId", sUsrId);
                     jdata.put("newPassword", sPinBaru);
